@@ -9,12 +9,12 @@
  * Additionally, it has a draw function which allows the room to be drawn with the correct orientation of doors.
  */
 
-import java.util.ArrayList;
-import java.awt.Graphics;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import javax.imageio.ImageIO;
+import java.util.ArrayList;
 
 public class Vertex implements Comparable<Vertex> {
 
@@ -44,7 +44,6 @@ public class Vertex implements Comparable<Vertex> {
         this.y = y; //sets y position
         cost = 1e+7; //sets cost to be very high
         visited = false; //sets visited to false
-
     }
 
     //returns the distance between this vertex and the other passed in
