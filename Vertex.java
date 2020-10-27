@@ -44,6 +44,7 @@ public class Vertex implements Comparable<Vertex> {
         this.y = y; //sets y position
         cost = 1e+7; //sets cost to be very high
         visited = false; //sets visited to false
+
     }
 
     //returns the distance between this vertex and the other passed in
