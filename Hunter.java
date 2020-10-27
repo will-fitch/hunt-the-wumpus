@@ -1,3 +1,9 @@
+/*
+ * File: Hunter.java
+ * Author: Will Fitch
+ * Date: 02/23/2020
+ */
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;

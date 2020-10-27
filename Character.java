@@ -1,4 +1,8 @@
-
+/*
+ * File: Character.java
+ * Author: Will Fitch
+ * Date: 02/23/2020
+ */
 
 public class Character {
 

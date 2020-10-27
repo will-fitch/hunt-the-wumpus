@@ -1,3 +1,9 @@
+/*
+ * File: Graph.java
+ * Author: Will Fitch
+ * Date: 02/23/2020
+ */
+
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
@@ -100,9 +106,9 @@ public class Graph {
 
         ArrayList<Vertex> returnList = new ArrayList<>();
 
-        for( int i = 0; i < grid.length; i++ ) {
-            for( int j = 0; j < grid.length; j++ ) {
-                returnList.add( grid[i][j] );
+        for( Vertex[] vertArr : grid) {
+            for( Vertex vert : vertArr ) {
+                returnList.add( vert );
             }
         }
 
@@ -112,10 +118,10 @@ public class Graph {
 
     public void draw(Graphics g, int scale) {
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid.length; j++) {
+        for(Vertex[] vertArr : grid) {
+            for(Vertex vert : vertArr) {
 
-                grid[i][j].draw(g, scale);
+                vert.draw(g, scale);
 
             }
         }
@@ -126,9 +132,9 @@ public class Graph {
 
         String returnString = "";
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid.length; j++) {
-                returnString += grid[i][j].numNeighbors() + " ";
+        for(Vertex[] vertArr : grid) {
+            for(Vertex vert : vertArr) {
+                returnString += vert.numNeighbors() + " ";
             }
             returnString += "\n";
         }
